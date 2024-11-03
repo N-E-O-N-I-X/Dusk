@@ -1,0 +1,210 @@
+body {
+  height: 100vh;
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  margin-top: -7px;
+  color: white;
+  font-size: 160px;
+  filter: drop-shadow(0 0 12px rgba(209, 185, 50, 0.8));
+}
+
+.moon {
+  position: absolute;
+  top: 5%;
+  right: -10%;
+}
+
+.moon img {
+  width: 480px;
+  animation: float 5s ease-in-out infinite; /* Добавлена анимация */
+}
+
+.elon {
+  position: absolute;
+  z-index: 3;
+  top: 44%;
+  right: 34%;
+}
+
+.elon img {
+  width: 300px;
+  rotate: 8deg;
+  animation: float 2s ease-in-out infinite; /* Добавлена анимация */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Исходное положение */
+  }
+  50% {
+    transform: translateY(-10px); /* Сдвиг вверх на 10 пикселей */
+  }
+}
+
+.trail {
+  position: absolute;
+  z-index: 2;
+  top: 73.5%;
+  right: 42%;
+}
+
+.trail img {
+  height: 50px;
+  rotate: -20deg;
+  animation: float 2s ease-in-out infinite; /* Добавлена анимация */
+}
+
+
+
+.earth {
+  position: absolute;
+  z-index: 2;
+  top: 44%;
+  left: -30%;
+}
+
+.earth img {
+  width: 1300px;
+  animation: float 5s ease-in-out infinite; /* Добавлена анимация */
+}
+
+.doge {
+position: absolute;
+z-index: 3;
+top: 65%;
+left: 35%;
+}
+
+.doge img {
+  width: 130px;
+  rotate: -20deg;
+  animation: run 3s ease-in-out infinite;
+}
+
+@keyframes run {
+  0%, 100% {
+    transform: translateY(0); /* Исходное положение */
+  }
+  50% {
+    transform: translateX(-25px); /* Сдвиг вверх на 10 пикселей */
+  }
+}
+
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ufo {
+  position: absolute;
+  z-index: 3;
+  top: 150px;
+  left: 120px
+}
+
+.ufo img {
+  width: 260px;
+  rotate: 20deg;
+  animation: run 1.7s ease-in-out infinite;
+}
+
+.ufo img:hover {
+  cursor: pointer;
+}
+
+.music {
+  position: absolute;
+  z-index: 3;
+  top: 61%;
+  right: 17%;
+}
+
+.music img {
+  width: 150px;
+  animation: rotate 6s linear infinite;
+}
+
+.music img:hover {
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  z-index: 999;
+  gap: 30px;
+  right: 6%;
+  bottom: 8%;
+}
+
+.x {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x button {
+  padding: 5px 10px;
+  color: white;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: white 6px solid;
+}
+
+.x button:hover {
+  transform: scale(1.1);
+  background-color: rgba(30, 8, 82, 0.2);
+  cursor: pointer;
+  transition: 0.16s;
+}
+
+.pump {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pump button {
+  padding: 5px 10px;
+  color: white;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: white 6px solid;
+}
+
+.pump button:hover {
+  transform: scale(1.1);
+  background-color: rgba(30, 8, 82, 0.2);
+  cursor: pointer;
+  transition: 0.16s;
+}

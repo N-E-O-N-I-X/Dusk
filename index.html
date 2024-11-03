@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DUSK</title>
+    <link rel="icon" href="elon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Rubik+Wet+Paint&family=Silkscreen:wght@400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Dusk</h1>
+    <div class="moon"><img src="moon.png"></div>
+    <div class="trail"><img src="trail.png"></div>
+    <div class="elon"><img src="elon.png"></div>
+    <div class="earth"><img src="earth.png"></div>
+    <div class="doge"><a href="https://www.youtube.com/watch?v=s3NWyh8a5t0&t=19s&ab_channel=HerrFuchs"><img src="NyanDoge.webp"></a></div>
+    <div class="ufo"><img src="ufo.png" onclick="playSound()"></div>
+    <div class="music"><img src="music.png" onclick="toggleMusic()"></div>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="background-music" src="music.mp3" loop></audio>
+    <div class="links">
+      <div class="pump"><button onclick="window.location.href='https://pump.fun/board'">PUMP</button></div>
+      <div class="x"><button onclick="window.location.href=''">X</button></div>
+    </div>
+  </body>
+  <script>
+    function playSound() {
+        const sound = document.getElementById('click-sound');
+        sound.play();
+    }
+
+    let isPlaying = false; // Переменная для отслеживания состояния музыки
+        const music = document.getElementById('background-music');
+
+        // Установка громкости ниже по умолчанию
+        music.volume = 0.1; // Громкость от 0 (без звука) до 1 (максимум)
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+            } else {
+                music.play();
+            }
+            isPlaying = !isPlaying; // Переключение состояния
+        }
+</script>
+</html>
